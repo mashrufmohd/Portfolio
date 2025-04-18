@@ -1,0 +1,110 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+/* Tailwind Base, Components, and Utilities */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Base Layer Styles */
+@layer base {
+  /* Apply Inter font family to the body by default */
+  body {
+    @apply bg-gray-50 text-gray-900 font-inter dark:bg-gray-900 dark:text-gray-50;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Ensure code blocks use Fira Code */
+  code {
+    @apply font-fira-code text-sm bg-gray-100 dark:bg-gray-800 p-1 rounded;
+    font-family: 'Fira Code', monospace;
+  }
+
+  /* Reset margins and padding for common elements */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-inter text-gray-900 dark:text-gray-50;
+  }
+
+  /* Ensure links have consistent styling */
+  a {
+    @apply text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-200 underline transition-colors duration-200;
+  }
+}
+
+/* Custom Components Layer */
+@layer components {
+  /* Button Styles (from your provided config) */
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-lg font-medium transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+  
+  .btn-primary {
+    @apply bg-primary-600 text-white hover:bg-primary-700 focus:ring-primary-500;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary-600 text-white hover:bg-secondary-700 focus:ring-secondary-500;
+  }
+  
+  .btn-outline {
+    @apply border-2 border-primary-600 text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900 focus:ring-primary-500;
+  }
+  
+  /* Section Container (from your config) */
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24;
+  }
+  
+  /* Section Title (from your config) */
+  .section-title {
+    @apply text-3xl sm:text-4xl font-bold text-center mb-12;
+  }
+  
+  /* Card Styles (from your config) */
+  .card {
+    @apply bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden transition-all duration-300;
+  }
+
+  /* Contact Page Specific Styles */
+  .contact-container {
+    @apply flex flex-col md:flex-row gap-8 justify-center;
+  }
+
+  .contact-info, .contact-form {
+    @apply w-full md:w-1/2 p-6;
+  }
+
+  .contact-list {
+    @apply space-y-4;
+  }
+
+  .contact-item {
+    @apply flex items-center gap-4 p-4 bg-gray-100 dark:bg-gray-700 rounded-lg hover:shadow-lg transition-shadow duration-300;
+  }
+
+  .icon {
+    @apply text-blue-500;
+  }
+
+  .item-title {
+    @apply text-lg font-medium text-gray-800 dark:text-gray-200;
+  }
+
+  .item-value {
+    @apply text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 underline;
+  }
+}
+
+/* Utilities or Custom Styles (if needed) */
+@layer utilities {
+  .font-inter {
+    font-family: 'Inter', sans-serif;
+  }
+
+  .font-fira-code {
+    font-family: 'Fira Code', monospace;
+  }
+}
