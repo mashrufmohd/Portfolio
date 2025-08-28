@@ -56,10 +56,9 @@ const HomePage = () => {
   }, [controls]);
 
   const socialLinks = [
-    { icon: <Github size={20} />, url: 'https://github.com/mashrufmohd', label: 'GitHub' }, // Replace with your GitHub
-    { icon: <Linkedin size={20} />, url: 'linkedin.com/in/mohd-mashruf', label: 'LinkedIn' }, // Replace with your LinkedIn
-    { icon: <Twitter size={20} />, url: 'https://x.com/Mashruf1475501', label: 'Twitter' }, // Replace with your Twitter
-    { icon: <Mail size={20} />, url: 'aalammashruf724@gmail.com', label: 'Email' }, // Replace with your email
+    { icon: <Github size={20} />, url: 'https://github.com/mashrufmohd', label: 'GitHub' }, 
+    { icon: <Linkedin size={20} />, url: 'linkedin.com/in/mohd-mashruf', label: 'LinkedIn' }, 
+    { icon: <Twitter size={20} />, url: 'https://x.com/Mashruf1475501', label: 'Twitter' },
   ];
 
   return (
@@ -82,7 +81,7 @@ const HomePage = () => {
                   transition={{ delay: 0.5, duration: 0.5 }}
                   className="block mt-2"
                 >
-                  Frontend Developer
+                  Full Stack Web Developer
                 </motion.span>
               </motion.h1>
 
@@ -92,7 +91,7 @@ const HomePage = () => {
                 transition={{ delay: 0.2, duration: 0.5 }}
                 className="text-lg text-gray-700 dark:text-gray-300 mb-8 max-w-lg"
               >
-                Results-driven Frontend Developer with expertise in HTML, CSS, React, and JavaScript. Skilled in backend development using Node.js and MongoDB. Passionate about building scalable, user-friendly web applications with modern technologies.
+                Results-driven Full Stack Web Developer with expertise in HTML, CSS, React, and JavaScript. Skilled in backend development using Node.js and MongoDB. Passionate about building scalable, user-friendly web applications with modern technologies.
               </motion.p>
 
               <div className="flex flex-wrap gap-4">

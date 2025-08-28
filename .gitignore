@@ -16,6 +16,12 @@ dist-ssr/
 .vite/
 *.local
 
+# Local env files
+.env.*.local# Local env files
+*.local
+.env
+.env.*.local
+
 # Environment variables
 .env
 
@@ -30,8 +36,11 @@ dist-ssr/
 *.sln
 *.sw?
 
-# TypeScript
+# TypeScript build info
 *.tsbuildinfo
 
 # Coverage reports
 coverage/
+
+# Optional: Ignore personal screenshots in public/image
+public/image/Screenshot*

@@ -25,8 +25,8 @@ const AboutPage = () => {
       year: 'Aug 2022 - Jun 2026 (Expected)',
       title: 'B.E. in Computer Science and Engineering',
       company: 'Chandigarh University',
-      description: 'Pursuing a Bachelor’s degree with a CGPA of 7.37, specializing in web development, AI, and software engineering.',
-      icon: <GraduationCap size={20} />,
+      description: 'Pursuing a Bachelor’s degree in Computer Science and Engineering (CSE), currently in 7th semester, with a CGPA of 7.37. Learned web development and software engineering skills.',
+      icon: <GraduationCap size={20} />,  
     },
     {
       year: 'May 2024 - Jun 2024',
@@ -36,17 +36,24 @@ const AboutPage = () => {
       icon: <Briefcase size={20} />,
     },
     {
-      year: 'Dec 2024 - Present',
+      year: 'Dec 2024 - Mar 2025',
       title: 'Contributor',
       company: 'Social Winter of Code',
       description: 'Contributed to AI-based open-source projects, improving features and optimizing performance using JavaScript, React, Next.js, Node.js, and MongoDB.',
       icon: <Briefcase size={20} />,
     },
     {
-      year: 'Jan 2025 - Present',
+      year: 'Jan 2025 - 15 Mar 2025',
       title: 'Mentor',
       company: 'JGEC Winter of Code (JWoC)',
       description: 'Mentored contributors in frontend and backend open-source projects, guiding development with JavaScript, React, Next.js, Node.js, and MongoDB.',
+      icon: <Briefcase size={20} />,
+    },
+    {
+      year: 'Aug 2025 - Present',
+      title: 'Project Admin',
+      company: 'GirlScript Summer of Code (GSSoC)',
+      description: 'Leading and managing open-source projects, coordinating with contributors, and ensuring successful project delivery using modern web technologies.',
       icon: <Briefcase size={20} />,
     },
   ];
@@ -57,7 +64,6 @@ const AboutPage = () => {
       summary: 'Explore my personal background and story.',
       details: {
         name: 'Mohd Mashruf',
-        age: '21',
         location: 'Mohali, Punjab, India',
         bio: 'I am a dedicated Frontend Developer with expertise in HTML, CSS, React, and JavaScript, complemented by strong backend skills in Node.js and MongoDB. I specialize in building scalable, efficient web applications and enjoy tackling complex technical challenges. Outside of my professional work, I am an aspiring musician, an enthusiastic gardener, and a keen reader, with a growing interest in cooking as a creative outlet.',
 
@@ -74,7 +80,7 @@ const AboutPage = () => {
         institution: 'Chandigarh University',
         year: '2022 - 2026 (Expected)',
         cgpa: '7.37',
-        focus: 'Data Structures, Web Development, AI, Machine Learning',
+        focus: 'Data Structures, Full Stack Web Development', 
         achievements: 'Active participant in open-source programs and coding competitions.',
       },
       icon: <GraduationCap size={20} />,
@@ -83,10 +89,11 @@ const AboutPage = () => {
       title: 'Experience',
       summary: 'Discover my professional experience and achievements.',
       details: {
-        current: 'Contributor at Social Winter of Code (Dec 2024 - Present)',
-        previous: 'Mentor at JGEC Winter of Code (Jan 2025 - Present), Intern at Chandigarh University (May 2024 - Jun 2024)',
-        skills: 'JavaScript, React, Next.js, Node.js, MongoDB, Python, OpenCV',
-        achievements: 'Improved processing efficiency by 40% in Multi-RAG-Agent Tools, onboarded 15-20 users for Guard AI testing.',
+        Gssoc: 'Project Admin at GirlScript Summer of Code (Aug 2025 - Present)',
+        Swoc: 'Contributor at Social Winter of Code (Dec 2024 - Present)',
+        Jwoc: 'Mentor at JGEC Winter of Code (Jan 2025 - Present)', 
+        Inhouse:'Intern at Chandigarh University (May 2024 - Jun 2024)',
+        skills: 'JavaScript, React, Next.js, Node.js, MongoDB',
       },
       icon: <Briefcase size={20} />,
     },
@@ -95,7 +102,6 @@ const AboutPage = () => {
       summary: 'Explore my passions and leisure activities.',
       details: {
         hobbies: ['Gardening', 'Reading Books', 'Aspiring Musician'],
-        favoriteBooks: 'N/A', // Add your favorite books if desired
         favoriteActivities: 'Tending to my garden, reading insightful books, and playing musical instruments.',
       },
       icon: <Award size={20} />,
@@ -116,7 +122,7 @@ const AboutPage = () => {
         ],
         achievements: [
           'Selected for JGEC Winter of Code Open Source Program',
-          'Contributed to Guard AI, selected in JWOC, DWOC, SWOC',
+          'Contributed to Guard AI, selected in JWOC,SWOC',
           'Developed GitHub Trending Repo Extension',
         ],
       },

@@ -13,27 +13,28 @@ const SkillsPage = () => {
     {
       title: 'Backend Development',
       icon: <Server size={32} />,
-      skills: ['Node.js', 'Express.js', 'MongoDB', 'FastAPI'],
+      skills: ['Node.js', 'Express.js', 'MongoDB',],
     },
     {
       title: 'Programming Languages',
       icon: <Cpu size={32} />,
-      skills: ['JavaScript', 'Java', 'SQL', 'C', 'C++', 'Python', 'TypeScript'],
+      skills: ['JavaScript', 'TypeScript', 'Java', 'C', 'C++', 'SQL'],
     },
+
     {
       title: 'Databases',
       icon: <Database size={32} />,
-      skills: ['MySQL', 'MongoDB', 'NoSQL'],
+      skills: ['MySQL (SQL)', 'MongoDB (NoSQL)'],
     },
     {
       title: 'Tools & Technologies',
       icon: <Palette size={32} />,
-      skills: ['Git', 'GitHub', 'VS Code', 'Eclipse', 'Streamlit', 'OpenCV', 'FAISS', 'Hugging Face'],
+      skills: ['Git', 'GitHub', 'VS Code', 'Eclipse', 'Postman','Tailwind CSS', ],
     },
     {
       title: 'Additional Skills',
       icon: <Lightbulb size={32} />,
-      skills: ['Data Structures & Algorithms', 'REST APIs', 'Authentication (JWT, Clerk)', 'Web Security', 'Performance Optimization', 'Problem Solving', 'Competitive Programming'],
+      skills: ['Data Structures & Algorithms', 'REST APIs', 'Authentication (Clerk)', 'Performance Optimization', 'Problem Solving'],
     },
   ];
 

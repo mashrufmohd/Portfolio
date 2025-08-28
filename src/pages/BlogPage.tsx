@@ -4,6 +4,19 @@ import { Search } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import BlogCard from '../components/BlogCard';
 
+type Category = {
+  id: string;
+  name: string;
+};
+
+const categories: Category[] = [
+  { id: 'all', name: 'All' },
+  { id: 'Frontend', name: 'Frontend' },
+  { id: 'Backend', name: 'Backend' },
+  { id: 'DevOps', name: 'DevOps' },
+  // Add more categories as needed
+];
+
 const BlogPage = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [activeCategory, setActiveCategory] = useState('all');
@@ -19,66 +32,6 @@ const BlogPage = () => {
       url: '#',
       category: 'Frontend',
     },
-    {
-      id: 2,
-      title: 'Understanding React Hooks: A Comprehensive Guide',
-      excerpt: 'Dive deep into React Hooks and learn how they can simplify your components and make your code more reusable and maintainable.',
-      date: 'May 22, 2023',
-      readTime: '12 min read',
-      image: 'https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
-      url: '#',
-      category: 'React',
-    },
-    {
-      id: 3,
-      title: 'Building RESTful APIs with Node.js and Express',
-      excerpt: 'Learn how to create robust and scalable RESTful APIs using Node.js and Express, with best practices for authentication and error handling.',
-      date: 'April 10, 2023',
-      readTime: '10 min read',
-      image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
-      url: '#',
-      category: 'Backend',
-    },
-    {
-      id: 4,
-      title: 'Introduction to TypeScript for JavaScript Developers',
-      excerpt: 'Discover how TypeScript can enhance your JavaScript development experience with static typing, interfaces, and advanced type features.',
-      date: 'March 5, 2023',
-      readTime: '7 min read',
-      image: 'https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
-      url: '#',
-      category: 'TypeScript',
-    },
-    {
-      id: 5,
-      title: 'Optimizing Website Performance: A Developer\'s Guide',
-      excerpt: 'Learn practical techniques to improve your website\'s performance, from image optimization to code splitting and lazy loading.',
-      date: 'February 18, 2023',
-      readTime: '9 min read',
-      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1115&q=80',
-      url: '#',
-      category: 'Performance',
-    },
-    {
-      id: 6,
-      title: 'Getting Started with Framer Motion in React',
-      excerpt: 'Explore how to add beautiful animations to your React applications using Framer Motion, a production-ready animation library.',
-      date: 'January 30, 2023',
-      readTime: '6 min read',
-      image: 'https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
-      url: '#',
-      category: 'Animation',
-    },
-  ];
-  
-  const categories = [
-    { id: 'all', name: 'All Posts' },
-    { id: 'Frontend', name: 'Frontend' },
-    { id: 'Backend', name: 'Backend' },
-    { id: 'React', name: 'React' },
-    { id: 'TypeScript', name: 'TypeScript' },
-    { id: 'Performance', name: 'Performance' },
-    { id: 'Animation', name: 'Animation' },
   ];
   
   const filteredPosts = blogPosts
