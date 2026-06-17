@@ -57,7 +57,7 @@ const HomePage = () => {
 
   const socialLinks = [
     { icon: <Github size={20} />, url: 'https://github.com/mashrufmohd', label: 'GitHub' }, 
-    { icon: <Linkedin size={20} />, url: 'linkedin.com/in/mohd-mashruf', label: 'LinkedIn' }, 
+    { icon: <Linkedin size={20} />, url: 'https://www.linkedin.com/in/mohd-mashruf', label: 'LinkedIn' }, 
     { icon: <Twitter size={20} />, url: 'https://x.com/Mashruf1475501', label: 'Twitter' },
   ];
 
@@ -148,7 +148,7 @@ const HomePage = () => {
               <div className="relative">
                 <div className="w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-xl">
                   <img
-                    src="\image\linkedin_profile.jpeg"
+                    src="public\image\linkedin_profile.png"
                     alt="Profile"
                     className="w-full h-full object-cover"
                   />
