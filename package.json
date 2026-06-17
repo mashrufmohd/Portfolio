@@ -3,19 +3,22 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-"scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "preview": "vite preview",
-  "start": "node server.js",
-  "dev-server": "concurrently \"vite\" \"nodemon server.js\""
-},
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "node server.js",
+    "dev-server": "concurrently \"vite\" \"nodemon server.js\""
+  },
   "dependencies": {
+    "bcryptjs": "^3.0.3",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "framer-motion": "^11.0.8",
+    "jsonwebtoken": "^9.0.3",
     "lucide-react": "^0.344.0",
+    "mongoose": "^9.1.6",
     "nodemailer": "^6.10.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
