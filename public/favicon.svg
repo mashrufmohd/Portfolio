@@ -1,0 +1,21 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="24" y1="24" x2="232" y2="232" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1F33"/>
+      <stop offset="0.5" stop-color="#122E4A"/>
+      <stop offset="1" stop-color="#1C3B67"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="56" y1="46" x2="200" y2="206" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38BDF8"/>
+      <stop offset="0.45" stop-color="#60A5FA"/>
+      <stop offset="1" stop-color="#A78BFA"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="18" y="18" width="220" height="220" rx="52" fill="url(#bg)"/>
+  <rect x="18" y="18" width="220" height="220" rx="52" stroke="rgba(255,255,255,0.18)" stroke-width="2"/>
+
+  <path d="M68 178V80.5C68 75.8056 71.8056 72 76.5 72H93.96L128 134.34L162.04 72H179.5C184.194 72 188 75.8056 188 80.5V178H167.6V105.13L136.5 158.25H119.5L88.4 105.13V178H68Z" fill="url(#accent)"/>
+
+  <path d="M92 190H164C170.627 190 176 184.627 176 178V173C176 166.373 170.627 161 164 161H92C85.3726 161 80 166.373 80 173V178C80 184.627 85.3726 190 92 190Z" fill="#E2E8F0" fill-opacity="0.14"/>
+</svg>
