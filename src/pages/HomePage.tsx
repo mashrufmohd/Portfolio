@@ -122,7 +122,7 @@ const HomePage = () => {
                   transition={{ delay: 0.4, duration: 0.5 }}
                 >
                   <a
-                    href="/docs/CV_Mohd_Mashruf.pdf"
+                    href="/docs/CV_Mohd_Mashruf.pdf?v=20261012"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn btn-outline"
