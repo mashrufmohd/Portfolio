@@ -93,8 +93,8 @@ const AboutPage = () => {
     details: {
       name: 'Mohd Mashruf',
       location: 'Mohali, Punjab, India',
-      bio: 'I am a Full Stack Developer with hands-on experience in building scalable web applications using React, Node.js, MongoDB, and modern frontend frameworks. I have worked on real-world projects including healthcare platforms and AI-based tools. I enjoy solving complex problems, building efficient systems, and continuously improving my development skills. Alongside tech, I have a strong interest in music, reading, and personal growth.',
-      interests: 'Full Stack Development, Open Source, AI Projects, Music, Reading',
+      bio: 'I’m a developer with a strong foundation in Python, data analysis, AI-powered application development, backend engineering, and modern web technologies. I enjoy working with data, building intelligent applications, and turning ideas into practical software. My full-stack background helps me build data and AI workflows into usable applications, APIs, dashboards, and real-world products.',
+      interests: 'Data Science, Machine Learning, AI, NLP, Full Stack Development, Open Source',
     },
     icon: <Calendar size={20} />,
   },
@@ -107,8 +107,8 @@ const AboutPage = () => {
       institution: 'Chandigarh University, Mohali',
       year: '2022 - 2026 (Expected)',
       cgpa: '7.37',
-      focus: 'Data Structures, Full Stack Development, Backend APIs',
-      achievements: 'Active contributor in open-source programs and campus ambassador initiatives.',
+      focus: 'Data Structures, Web Development, Software Engineering, AI & Data Projects',
+      achievements: 'Focused on practical application development, AI workflows, and data-driven software solutions.',
     },
     icon: <GraduationCap size={20} />,
   },
@@ -117,13 +117,13 @@ const AboutPage = () => {
     title: 'Experience',
     summary: 'Discover my professional experience and achievements.',
     details: {
-      bluestock: 'Software Development Engineer Intern at Bluestock Fintech (Nov 2025 - Dec 2025)',
-      edc: 'Campus Ambassador at EDC IIT Delhi (Dec 2025 - Present)',
-      gssoc: 'Project Admin at GirlScript Summer of Code (Jul 2025 - Oct 2025)',
-      jwoc: 'Mentor at JGEC Winter of Code (Jan 2025 - Mar 2025)',
-      swoc: 'Contributor at Social Winter of Code (Dec 2024 - Mar 2025)',
-      inhouse: 'In-house Intern at Chandigarh University (May 2024 - Jun 2024)',
-      skills: 'React, Next.js, Node.js, Express.js, MongoDB, SQL, JavaScript, TypeScript',
+      bluestock: 'Software Development Engineer Intern at Bluestock Fintech',
+      edc: 'Campus Ambassador at EDC IIT Delhi',
+      gssoc: 'Project Admin at GirlScript Summer of Code',
+      jwoc: 'Mentor at JGEC Winter of Code',
+      swoc: 'Contributor at Social Winter of Code',
+      inhouse: 'In-house training in Computational Programming with Java',
+      skills: 'Python, JavaScript, TypeScript, React, Next.js, Node.js, FastAPI, Flask, PostgreSQL, MongoDB, Qdrant, Gemini, OpenAI APIs',
     },
     icon: <Briefcase size={20} />,
   },
@@ -132,8 +132,8 @@ const AboutPage = () => {
     title: 'Hobbies & Interests',
     summary: 'Explore my passions and leisure activities.',
     details: {
-      hobbies: ['Music', 'Reading', 'Gardening'],
-      favoriteActivities: 'Listening to music, exploring new technologies, reading books, and maintaining a garden.',
+      hobbies: ['Reading', 'Learning new technologies', 'Music', 'Problem solving'],
+      favoriteActivities: 'Exploring AI, data workflows, learning new frameworks, and building end-to-end practical projects.',
     },
     icon: <Award size={20} />,
   },
@@ -143,20 +143,19 @@ const AboutPage = () => {
     summary: 'View my professional certifications and notable achievements.',
     details: {
       certifications: [
-        'Java & JDBC In-House Training (Chandigarh University)',
-        'Azure Fundamentals (Microsoft & Simplilearn)',
-        'IoT Certification (SWAYAM)',
-        'Introduction to Big Data with Spark and Hadoop (IBM)',
-        'Introduction to NoSQL Databases (IBM)',
+        'AI & Machine Learning Internship – Edunet Foundation (AICTE-IBM SkillsBuild)',
+        'Java & JDBC In-House Training',
+        'Azure Fundamentals',
+        'Introduction to Big Data with Spark and Hadoop',
+        'Introduction to NoSQL Databases',
       ],
       achievements: [
+        'EY Techathon National Level finalist',
         'Campus Ambassador at EDC IIT Delhi',
-        'AI Project Contributor – Google for Startups (Prompt to Prototype)',
-        'Project Admin at GirlScript Summer of Code',
-        'Mentor at JGEC Winter of Code',
-        'Contributor at Social Winter of Code',
-        'Built QuickConsult (Doctor Appointment Platform)',
-        'Built BuildMyResume.ai (ATS Resume Builder)',
+        'Project Admin at GSSoC',
+        'Mentor at JWoC',
+        'Contributor at SWoC',
+        'Worked on AI-powered systems like Omniverse and AI Study Buddy',
       ],
     },
     icon: <Award size={20} />,
@@ -196,17 +195,17 @@ const AboutPage = () => {
   };
 
   return (
-    <div className="pt-24 bg-gray-900 min-h-screen">
+    <div className="pt-24 min-h-screen bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-white">
       <div className="section-container">
         <motion.div 
           variants={headingVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="mb-12 p-4 rounded-lg bg-gray-800 shadow-md border border-gray-700 max-w-xs mx-auto transition-all duration-500"
+          className="mb-12 p-4 rounded-lg bg-gray-100 shadow-md border border-gray-200 max-w-xs mx-auto transition-all duration-500 dark:bg-gray-800 dark:border-gray-700"
         >
           <h1 
-            className="text-2xl md:text-3xl font-extrabold text-center bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent"
+            className="text-2xl md:text-3xl font-extrabold text-center bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent"
           >
             My Story
           </h1>
@@ -222,11 +221,11 @@ const AboutPage = () => {
               whileHover="hover"
               whileTap="tap"
               viewport={{ once: true }}
-              className="bg-gray-800 p-6 rounded-xl shadow-md text-white cursor-pointer hover:bg-gray-700 transition-colors"
+              className="bg-white p-6 rounded-xl shadow-md text-gray-900 cursor-pointer border border-gray-200 hover:border-blue-400 transition-colors dark:bg-gray-800 dark:text-white dark:border-gray-700 dark:hover:border-blue-400"
               onClick={() => setExpandedCard(expandedCard === key ? null : key)}
             >
               <div className="flex items-center mb-4">
-                <span className="text-blue-400 mr-3">{card.icon}</span>
+                <span className="text-blue-500 mr-3 dark:text-blue-400">{card.icon}</span>
                 <h3 className="text-xl font-bold">{card.title}</h3>
               </div>
               {!expandedCard || expandedCard !== key ? (
@@ -234,7 +233,7 @@ const AboutPage = () => {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.5, ease: 'easeInOut' }}
-                  className="text-gray-300"
+                  className="text-gray-600 dark:text-gray-300"
                 >
                   {card.summary}
                 </motion.p>
@@ -244,7 +243,7 @@ const AboutPage = () => {
                   animate={{ opacity: 1, height: 'auto' }}
                   exit={{ opacity: 0, height: 0 }}
                   transition={{ duration: 0.5, ease: 'easeInOut' }}
-                  className="text-gray-300"
+                  className="text-gray-600 dark:text-gray-300"
                 >
                   {'certifications' in card.details ? (
                     <>
@@ -318,10 +317,10 @@ const AboutPage = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="mb-16 p-4 rounded-lg bg-gray-800 shadow-md border border-gray-700 max-w-xs mx-auto transition-all duration-500"
+            className="mb-16 p-4 rounded-lg bg-gray-100 shadow-md border border-gray-200 max-w-xs mx-auto transition-all duration-500 dark:bg-gray-800 dark:border-gray-700"
           >
             <h2 
-              className="text-xl md:text-2xl font-extrabold text-center bg-gradient-to-r from-green-400 via-blue-500 to-teal-500 bg-clip-text text-transparent"
+              className="text-xl md:text-2xl font-extrabold text-center bg-gradient-to-r from-green-500 via-blue-500 to-teal-500 bg-clip-text text-transparent"
             >
               My Journey
             </h2>
@@ -352,11 +351,11 @@ const AboutPage = () => {
                           <>
                             {/* LEFT CONTENT - RIGHT ALIGNED */}
                             <div className="w-1/2 pr-12">
-                              <div className="bg-gray-800 p-6 rounded-lg border border-gray-700 hover:border-blue-400 transition-all text-left">
-                                <p className="text-blue-400 font-semibold text-sm mb-2">{item.year}</p>
-                                <h3 className="text-xl font-bold text-white mb-2">{item.title}</h3>
-                                <p className="text-gray-400 text-sm mb-3">{item.company}</p>
-                                <p className="text-gray-300 text-sm leading-relaxed">{item.description}</p>
+                              <div className="bg-white p-6 rounded-lg border border-gray-200 hover:border-blue-400 transition-all text-left dark:bg-gray-800 dark:border-gray-700">
+                                <p className="text-blue-500 font-semibold text-sm mb-2 dark:text-blue-400">{item.year}</p>
+                                <h3 className="text-xl font-bold text-gray-900 mb-2 dark:text-white">{item.title}</h3>
+                                <p className="text-gray-500 text-sm mb-3 dark:text-gray-400">{item.company}</p>
+                                <p className="text-gray-600 text-sm leading-relaxed dark:text-gray-300">{item.description}</p>
                               </div>
                             </div>
                             
@@ -396,11 +395,11 @@ const AboutPage = () => {
                             
                             {/* RIGHT CONTENT - LEFT ALIGNED */}
                             <div className="w-1/2 pl-12">
-                              <div className="bg-gray-800 p-6 rounded-lg border border-gray-700 hover:border-blue-400 transition-all text-left">
-                                <p className="text-blue-400 font-semibold text-sm mb-2">{item.year}</p>
-                                <h3 className="text-xl font-bold text-white mb-2">{item.title}</h3>
-                                <p className="text-gray-400 text-sm mb-3">{item.company}</p>
-                                <p className="text-gray-300 text-sm leading-relaxed">{item.description}</p>
+                              <div className="bg-white p-6 rounded-lg border border-gray-200 hover:border-blue-400 transition-all text-left dark:bg-gray-800 dark:border-gray-700">
+                                <p className="text-blue-500 font-semibold text-sm mb-2 dark:text-blue-400">{item.year}</p>
+                                <h3 className="text-xl font-bold text-gray-900 mb-2 dark:text-white">{item.title}</h3>
+                                <p className="text-gray-500 text-sm mb-3 dark:text-gray-400">{item.company}</p>
+                                <p className="text-gray-600 text-sm leading-relaxed dark:text-gray-300">{item.description}</p>
                               </div>
                             </div>
                           </>
@@ -419,11 +418,11 @@ const AboutPage = () => {
                           {item.icon}
                         </motion.div>
                         
-                        <div className="bg-gray-800 p-5 rounded-lg border border-gray-700 hover:border-blue-400 transition-all flex-1">
-                          <p className="text-blue-400 font-semibold text-sm mb-1">{item.year}</p>
-                          <h3 className="text-lg font-bold text-white mb-1">{item.title}</h3>
-                          <p className="text-gray-400 text-xs mb-2">{item.company}</p>
-                          <p className="text-gray-300 text-xs leading-relaxed">{item.description}</p>
+                        <div className="bg-white p-5 rounded-lg border border-gray-200 hover:border-blue-400 transition-all flex-1 dark:bg-gray-800 dark:border-gray-700">
+                          <p className="text-blue-500 font-semibold text-sm mb-1 dark:text-blue-400">{item.year}</p>
+                          <h3 className="text-lg font-bold text-gray-900 mb-1 dark:text-white">{item.title}</h3>
+                          <p className="text-gray-500 text-xs mb-2 dark:text-gray-400">{item.company}</p>
+                          <p className="text-gray-600 text-xs leading-relaxed dark:text-gray-300">{item.description}</p>
                         </div>
                       </div>
                     </motion.div>

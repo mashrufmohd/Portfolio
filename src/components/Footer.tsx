@@ -6,10 +6,10 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   
   const socialLinks = [
-    { icon: <Github size={20} />, url: 'https://github.com', label: 'GitHub' },
-    { icon: <Linkedin size={20} />, url: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: <Twitter size={20} />, url: 'https://twitter.com', label: 'Twitter' },
-    { icon: <Mail size={20} />, url: 'mailto:your.email@example.com', label: 'Email' },
+    { icon: <Github size={20} />, url: 'https://github.com/mashrufmohd', label: 'GitHub' },
+    { icon: <Linkedin size={20} />, url: 'https://www.linkedin.com/in/mohammad-mashruf', label: 'LinkedIn' },
+    { icon: <Twitter size={20} />, url: 'https://x.com/Mashruf1475501', label: 'Twitter' },
+    { icon: <Mail size={20} />, url: 'mailto:aalammashruf724@gmail.com', label: 'Email' },
   ];
 
   return (
@@ -19,7 +19,7 @@ const Footer = () => {
           <div className="flex items-center mb-4 md:mb-0">
             <Code size={24} className="text-primary-600 dark:text-primary-400" />
             <span className="ml-2 text-lg font-bold text-gray-900 dark:text-white">
-              Portfolio
+              Mohd Mashruf
             </span>
           </div>
           
@@ -42,7 +42,7 @@ const Footer = () => {
         
         <div className="mt-8 border-t border-gray-200 dark:border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-gray-600 dark:text-gray-400">
-            © {currentYear} Your Name. All rights reserved.
+            © {currentYear} Mohd Mashruf. All rights reserved.
           </p>
           
           <div className="mt-4 md:mt-0">

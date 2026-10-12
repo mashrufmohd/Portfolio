@@ -6,35 +6,34 @@ import AnimatedSection from '../components/AnimatedSection';
 const SkillsPage = () => {
   const skillCategories = [
     {
-      title: 'Frontend Development',
-      icon: <Code size={32} />,
-      skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Next.js'],
-    },
-    {
-      title: 'Backend Development',
-      icon: <Server size={32} />,
-      skills: ['Node.js', 'Express.js', 'MongoDB',],
-    },
-    {
-      title: 'Programming Languages',
+      title: 'Data & AI',
       icon: <Cpu size={32} />,
-      skills: ['JavaScript', 'TypeScript', 'Java', 'C', 'C++', 'SQL'],
+      skills: ['Python', 'NumPy', 'Pandas', 'Matplotlib', 'Seaborn', 'SQL'],
     },
-
+    {
+      title: 'AI / LLM',
+      icon: <Lightbulb size={32} />,
+      skills: ['Gemini', 'OpenAI APIs', 'RAG', 'Vector Search', 'AI Agents', 'NLP'],
+    },
+    {
+      title: 'Backend',
+      icon: <Server size={32} />,
+      skills: ['Flask', 'FastAPI', 'Node.js', 'Express.js'],
+    },
+    {
+      title: 'Frontend',
+      icon: <Code size={32} />,
+      skills: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS'],
+    },
     {
       title: 'Databases',
       icon: <Database size={32} />,
-      skills: ['MySQL (SQL)', 'MongoDB (NoSQL)'],
+      skills: ['MongoDB', 'PostgreSQL', 'SQL', 'Firebase', 'Supabase', 'Qdrant'],
     },
     {
-      title: 'Tools & Technologies',
+      title: 'Tools',
       icon: <Palette size={32} />,
-      skills: ['Git', 'GitHub', 'VS Code', 'Eclipse', 'Postman','Tailwind CSS', ],
-    },
-    {
-      title: 'Additional Skills',
-      icon: <Lightbulb size={32} />,
-      skills: ['Data Structures & Algorithms', 'REST APIs', 'Authentication (Clerk)', 'Performance Optimization', 'Problem Solving'],
+      skills: ['Git', 'GitHub', 'VS Code', 'Docker', 'Postman'],
     },
   ];
 

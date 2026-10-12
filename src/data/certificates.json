@@ -1,0 +1,83 @@
+[
+  {
+    "id": "cert-006",
+    "title": "Artificial Intelligence & Machine Learning",
+    "issuer": "Unknown",
+    "date": "2024-01-01",
+    "imageUrl": "/certs/Artificial Intelligence & Machine Learning.jpg",
+    "pdfUrl": "",
+    "tags": ["AI", "ML"]
+  },
+  {
+    "id": "cert-007",
+    "title": "Azure Fundamentals",
+    "issuer": "Microsoft",
+    "date": "2024-01-01",
+    "imageUrl": "/certs/Azure Fundamentals.jpg",
+    "pdfUrl": "",
+    "tags": ["Azure", "Cloud"]
+  },
+  {
+    "id": "cert-008",
+    "title": "Certificate AIML",
+    "issuer": "Unknown",
+    "date": "2024-01-01",
+    "imageUrl": "/certs/Certificate_AIML.jpg",
+    "pdfUrl": "",
+    "tags": ["AI", "ML"]
+  },
+  {
+    "id": "cert-009",
+    "title": "Cloud Administration & Engineering",
+    "issuer": "Unknown",
+    "date": "2024-01-01",
+    "imageUrl": "/certs/Cloud Administration & Engineering.jpg",
+    "pdfUrl": "",
+    "tags": ["Cloud", "Admin"]
+  },
+  {
+    "id": "cert-010",
+    "title": "DotNet",
+    "issuer": "Unknown",
+    "date": "2024-01-01",
+    "imageUrl": "/certs/DotNet.jpg",
+    "pdfUrl": "",
+    "tags": ["DotNet"]
+  },
+  {
+    "id": "cert-011",
+    "title": "IAENG Membership",
+    "issuer": "IAENG",
+    "date": "2024-01-01",
+    "imageUrl": "/certs/IAENG_membership.jpg",
+    "pdfUrl": "",
+    "tags": ["Membership"]
+  },
+  {
+    "id": "cert-012",
+    "title": "Microsoft Copilot",
+    "issuer": "Microsoft",
+    "date": "2024-01-01",
+    "imageUrl": "/certs/Microsoft Copilot.jpg",
+    "pdfUrl": "",
+    "tags": ["Microsoft", "AI"]
+  },
+  {
+    "id": "cert-013",
+    "title": "NPTEL Swayam",
+    "issuer": "NPTEL",
+    "date": "2024-01-01",
+    "imageUrl": "/certs/NPTEL_Swayam.jpg",
+    "pdfUrl": "",
+    "tags": ["NPTEL"]
+  },
+  {
+    "id": "cert-014",
+    "title": "AI-Based Online Voter Registration System Research Paper",
+    "issuer": "Academic Research",
+    "date": "2025-01-01",
+    "imageUrl": "/certs/reserach paper.jpeg",
+    "pdfUrl": "/docs/AI-Based Online Voter Registration System _RP (2).pdf",
+    "tags": ["Research", "Paper", "AI", "ML"]
+  }
+]

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { motion, useAnimation, useMotionValue, useSpring, AnimationControls } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { Github, Linkedin, Twitter, Mail, ArrowRight } from 'lucide-react';
+import { Github, Linkedin, Twitter, BookOpen, ArrowRight } from 'lucide-react';
 
 // Reusable SocialLink component to handle motion value and spring
 interface SocialLinkProps {
@@ -56,9 +56,10 @@ const HomePage = () => {
   }, [controls]);
 
   const socialLinks = [
-    { icon: <Github size={20} />, url: 'https://github.com/mashrufmohd', label: 'GitHub' }, 
-    { icon: <Linkedin size={20} />, url: 'https://www.linkedin.com/in/mohd-mashruf', label: 'LinkedIn' }, 
+    { icon: <Github size={20} />, url: 'https://github.com/mashrufmohd', label: 'GitHub' },
+    { icon: <Linkedin size={20} />, url: 'https://www.linkedin.com/in/mohammad-mashruf', label: 'LinkedIn' },
     { icon: <Twitter size={20} />, url: 'https://x.com/Mashruf1475501', label: 'Twitter' },
+    { icon: <BookOpen size={20} />, url: 'https://takeuforward.org/profile/mashruf', label: 'TakeUForward' },
   ];
 
   return (
@@ -72,16 +73,25 @@ const HomePage = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
-                className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6"
+                className="text-4xl sm:text-5xl lg:text-[4.1rem] font-black leading-[0.9] tracking-[-0.06em] mb-6"
               >
-                Hi, I'm <span className="text-primary-600 dark:text-primary-400">Mohd Mashruf</span>
+                <span className="block text-gray-900 dark:text-white">Hi, I&apos;m</span>
+                <span className="block text-primary-600 dark:text-primary-400">Mohd Mashruf</span>
                 <motion.span
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.5, duration: 0.5 }}
-                  className="block mt-2"
+                  className="block mt-2 text-gray-900 dark:text-white"
                 >
-                  Full Stack Web Developer
+                  Full-Stack Developer
+                </motion.span>
+                <motion.span
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.6, duration: 0.5 }}
+                  className="block mt-2 text-primary-600 dark:text-primary-400"
+                >
+                  AI/ML Enthusiast
                 </motion.span>
               </motion.h1>
 
@@ -91,7 +101,7 @@ const HomePage = () => {
                 transition={{ delay: 0.2, duration: 0.5 }}
                 className="text-lg text-gray-700 dark:text-gray-300 mb-8 max-w-lg"
               >
-                Results-driven Full Stack Web Developer with expertise in HTML, CSS, React, and JavaScript. Skilled in backend development using Node.js and MongoDB. Passionate about building scalable, user-friendly web applications with modern technologies.
+                I’m a developer with a strong foundation in Python, data analysis, AI-powered application development, backend engineering, and modern web technologies. I enjoy building practical software, working with data, and turning ideas into usable products, dashboards, and AI workflows.
               </motion.p>
 
               <div className="flex flex-wrap gap-4">
@@ -111,9 +121,14 @@ const HomePage = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.4, duration: 0.5 }}
                 >
-                  <Link to="/projects" className="btn btn-outline">
-                    View My Work
-                  </Link>
+                  <a
+                    href="/docs/CV_Mohd_Mashruf.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-outline"
+                  >
+                    My Resume
+                  </a>
                 </motion.div>
               </div>
 
@@ -143,7 +158,7 @@ const HomePage = () => {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.2, duration: 0.5 }}
-              className="flex justify-center"
+              className="flex justify-center -mt-4 lg:-mt-8"
             >
               <div className="relative">
                 <div className="w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-xl">

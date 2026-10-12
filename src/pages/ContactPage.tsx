@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Phone, MapPin, Github, Linkedin, Twitter, BookOpen } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import ContactForm from '../components/ContactForm';
 import Navbar from '../components/Navbar';
@@ -18,7 +18,7 @@ const ContactPage: React.FC = () => {
       icon: <Mail size={24} />,
       title: 'Email',
       value: 'aalammashruf724@gmail.com',
-      link: 'mailto:example@email.com',
+      link: 'mailto:aalammashruf724@gmail.com',
     },
     {
       icon: <Phone size={24} />,
@@ -28,8 +28,7 @@ const ContactPage: React.FC = () => {
     {
       icon: <MapPin size={24} />,
       title: 'Location',
-      value: 'Chandigarh, Punjab, India',
-      
+      value: 'Mohali, Punjab, India',
     },
     {
       icon: <Github size={24} />,
@@ -40,14 +39,20 @@ const ContactPage: React.FC = () => {
     {
       icon: <Linkedin size={24} />,
       title: 'LinkedIn',
-      value: 'linkedin.com/in/mohd-mashruf',
-      link: 'https://www.linkedin.com/in/mohd-mashruf/',
+      value: 'linkedin.com/in/mohammad-mashruf',
+      link: 'https://www.linkedin.com/in/mohammad-mashruf/',
     },
     {
       icon: <Twitter size={24} />,
       title: 'Twitter',
       value: '@Mashruf1475501',
       link: 'https://x.com/Mashruf1475501',
+    },
+    {
+      icon: <BookOpen size={24} />,
+      title: 'TakeUForward',
+      value: 'takeuforward.org/profile/mashruf',
+      link: 'https://takeuforward.org/profile/mashruf',
     },
   ];
 

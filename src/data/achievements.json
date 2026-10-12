@@ -1,0 +1,61 @@
+{
+  "patents": [
+    {
+      "id": "pat-001",
+      "title": "Fast Algorithm for Data Processing",
+      "patentNumber": "US1234567B2",
+      "date": "2022-08-10",
+      "description": "A novel approach to optimizing data processing pipelines using machine learning.",
+      "link": "https://patents.google.com/patent/US1234567B2",
+      "pdfUrl": "/docs/patent-1234567.pdf"
+    },
+    {
+      "id": "pat-002",
+      "title": "Efficient Web Caching Mechanism",
+      "patentNumber": "US1234568B2",
+      "date": "2022-10-15",
+      "description": "A distributed caching system for high-traffic web applications.",
+      "link": "https://patents.google.com/patent/US1234568B2",
+      "pdfUrl": "/docs/patent-1234568.pdf"
+    },
+    {
+      "id": "pat-003",
+      "title": "Real-time Data Synchronization",
+      "patentNumber": "US1234569B2",
+      "date": "2023-01-20",
+      "description": "Technology for syncing data across multiple devices in real-time.",
+      "link": "https://patents.google.com/patent/US1234569B2",
+      "pdfUrl": "/docs/patent-1234569.pdf"
+    },
+    {
+      "id": "pat-004",
+      "title": "AI-powered Code Analysis Tool",
+      "patentNumber": "US1234570B2",
+      "date": "2023-03-10",
+      "description": "Automated code review and optimization using artificial intelligence.",
+      "link": "https://patents.google.com/patent/US1234570B2",
+      "pdfUrl": "/docs/patent-1234570.pdf"
+    },
+    {
+      "id": "pat-005",
+      "title": "Blockchain-based Document Verification",
+      "patentNumber": "US1234571B2",
+      "date": "2023-05-25",
+      "description": "Secure document verification and storage using blockchain technology.",
+      "link": "https://patents.google.com/patent/US1234571B2",
+      "pdfUrl": "/docs/patent-1234571.pdf"
+    }
+  ],
+  "research": [
+    {
+      "id": "res-001",
+      "title": "Efficient Algorithms in Modern Web Development",
+      "journal": "International Journal of Web Technologies",
+      "date": "2022-12-01",
+      "doi": "10.1234/ijwt.2022.001",
+      "description": "A comprehensive study on optimizing algorithm performance in web applications.",
+      "link": "https://doi.org/10.1234/ijwt.2022.001",
+      "pdfUrl": "/docs/research-paper-2022.pdf"
+    }
+  ]
+}

@@ -17,10 +17,10 @@ dist-ssr/
 *.local
 
 # Local env files
-.env.*.local# Local env files
-*.local
 .env
-.env.*.local
+.env.*
+!.env.example
+*.local
 
 # Environment variables
 .env
