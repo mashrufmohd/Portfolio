@@ -22,10 +22,10 @@ const AboutPage = () => {
       icon: <GraduationCap size={20} />,
     },
     {
-      year: 'Aug 2022 - Jun 2026 (Expected)',
+      year: 'Aug 2022 - Jun 2026',
       title: 'B.E. in Computer Science and Engineering',
       company: 'Chandigarh University',
-      description: 'Pursuing a Bachelor’s degree in Computer Science and Engineering (CSE), currently in 7th semester, with a CGPA of 7.37. Learned web development and software engineering skills.',
+      description: 'Completed my Bachelor’s degree in Computer Science and Engineering (CSE) with an overall CGPA of 7.5 (75%). Built a strong foundation in web development, software engineering, and practical problem-solving through academic and project-based learning.',
       icon: <GraduationCap size={20} />,  
     },
     {
@@ -105,8 +105,8 @@ const AboutPage = () => {
     details: {
       degree: 'B.E. in Computer Science and Engineering',
       institution: 'Chandigarh University, Mohali',
-      year: '2022 - 2026 (Expected)',
-      cgpa: '7.37',
+      year: '2022 - 2026',
+      cgpa: '7.5 (75%)',
       focus: 'Data Structures, Web Development, Software Engineering, AI & Data Projects',
       achievements: 'Focused on practical application development, AI workflows, and data-driven software solutions.',
     },
