@@ -73,7 +73,7 @@ const HomePage = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
-                className="text-4xl sm:text-5xl lg:text-[4.1rem] font-black leading-[0.9] tracking-[-0.06em] mb-6"
+                className="text-[clamp(2.5rem,7vw,5rem)] font-black leading-[0.92] tracking-[-0.06em] mb-6 max-w-[12ch]"
               >
                 <span className="block text-gray-900 dark:text-white">Hi, I&apos;m</span>
                 <span className="block text-primary-600 dark:text-primary-400">Mohd Mashruf</span>
@@ -99,18 +99,19 @@ const HomePage = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2, duration: 0.5 }}
-                className="text-lg text-gray-700 dark:text-gray-300 mb-8 max-w-lg"
+                className="text-base sm:text-lg text-gray-700 dark:text-gray-300 mb-8 max-w-xl leading-relaxed"
               >
                 I’m a developer with a strong foundation in Python, data analysis, AI-powered application development, backend engineering, and modern web technologies. I enjoy building practical software, working with data, and turning ideas into usable products, dashboards, and AI workflows.
               </motion.p>
 
-              <div className="flex flex-wrap gap-4">
+              <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.3, duration: 0.5 }}
+                  className="w-full sm:w-auto"
                 >
-                  <Link to="/contact" className="btn btn-outline">
+                  <Link to="/contact" className="btn btn-outline w-full sm:w-auto justify-center">
                     Hire Me
                     <ArrowRight size={18} className="ml-2" />
                   </Link>
@@ -120,12 +121,13 @@ const HomePage = () => {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.4, duration: 0.5 }}
+                  className="w-full sm:w-auto"
                 >
                   <a
                     href="/docs/CV_Mohd_Mashruf.pdf?v=20261012"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-outline"
+                    className="btn btn-outline w-full sm:w-auto justify-center"
                   >
                     My Resume
                   </a>
@@ -141,7 +143,7 @@ const HomePage = () => {
                 <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
                   Connect with me:
                 </p>
-                <div className="flex space-x-4 items-center">
+                <div className="flex flex-wrap items-center gap-3 sm:gap-4">
                   {socialLinks.map((link, index) => (
                     <SocialLink
                       key={index}
@@ -160,8 +162,8 @@ const HomePage = () => {
               transition={{ delay: 0.2, duration: 0.5 }}
               className="flex justify-center -mt-4 lg:-mt-8"
             >
-              <div className="relative">
-                <div className="w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-xl">
+              <div className="relative w-full max-w-[18rem] sm:max-w-[20rem]">
+                <div className="aspect-square w-full rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-xl bg-gray-200 dark:bg-gray-700">
                   <img
                     src="/image/linkedin_profile.png"
                     alt="Profile"

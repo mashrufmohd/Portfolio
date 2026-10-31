@@ -2,7 +2,6 @@ import React from 'react';
 import { Mail, Phone, MapPin, Github, Linkedin, Twitter, BookOpen } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import ContactForm from '../components/ContactForm';
-import Navbar from '../components/Navbar';
 
 // Define the shape of contact information
 interface ContactItem {
@@ -57,11 +56,10 @@ const ContactPage: React.FC = () => {
   ];
 
   return (
-    <div className="section-container">
-      <Navbar /> {/* Optional: Add navigation */}
+    <div className="section-container pt-24">
       <AnimatedSection>
         <h1 className="section-title text-gray-900 dark:text-gray-50">Contact Me</h1>
-        <div className="flex flex-col md:flex-row gap-8 justify-center">
+        <div className="flex flex-col md:flex-row gap-8 justify-center items-stretch">
           {/* Contact Information Column */}
           <div className="card w-full md:w-1/2 p-6">
             <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-6">Get in Touch</h2>

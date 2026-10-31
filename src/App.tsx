@@ -6,6 +6,7 @@ import { Moon, Sun } from 'lucide-react';
 
 // Components
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 // Pages
 import HomePage from './pages/HomePage';
@@ -51,13 +52,13 @@ function App() {
       
       <button 
         onClick={toggleDarkMode}
-        className="fixed top-4 right-4 z-50 p-3 rounded-full bg-gray-200 dark:bg-gray-800 shadow-lg transition-all duration-300 hover:scale-110"
+        className="fixed left-3 top-3 z-50 p-2.5 sm:left-auto sm:top-4 sm:right-4 sm:p-3 rounded-full bg-gray-200/90 dark:bg-gray-800/90 shadow-lg backdrop-blur-sm transition-all duration-300 hover:scale-110"
         aria-label="Toggle dark mode"
       >
-        {darkMode ? <Sun size={20} /> : <Moon size={20} />}
+        {darkMode ? <Sun size={18} className="sm:w-5 sm:h-5" /> : <Moon size={18} className="sm:w-5 sm:h-5" />}
       </button>
       
-      <main className="flex-grow">
+      <main className="flex-grow overflow-hidden">
         <AnimatePresence mode="wait">
           <Routes location={location} key={location.pathname}>
             <Route path="/" element={<HomePage />} />
@@ -71,6 +72,8 @@ function App() {
           </Routes>
         </AnimatePresence>
       </main>
+
+      <Footer />
     </div>
   );
 }

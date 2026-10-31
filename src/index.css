@@ -8,13 +8,39 @@
 
 /* Custom Base Layer Styles */
 @layer base {
-  /* Apply Inter font family to the body by default */
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply bg-gray-50 text-gray-900 font-inter dark:bg-gray-900 dark:text-gray-50;
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    min-width: 0;
+  }
+
+  #root {
+    min-height: 100vh;
+  }
+
+  img,
+  svg,
+  video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  button,
+  input,
+  textarea {
+    font: inherit;
   }
 
   /* Ensure code blocks use Fira Code */
@@ -56,6 +82,11 @@
   /* Section Container (from your config) */
   .section-container {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24;
+    width: min(100%, 80rem);
+  }
+
+  .section-container > * {
+    min-width: 0;
   }
   
   /* Section Title (from your config) */
